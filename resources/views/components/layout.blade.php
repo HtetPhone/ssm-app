@@ -7,7 +7,7 @@
     <title>SSM</title>
 
     {{-- jquery --}}
-    <script src="{{ Vite::asset('resources/js/jquery.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     {{-- sweet alert2 js --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -66,7 +66,7 @@
                     </div>
 
                     <div>
-                        <img src="http://placehold.it/95/95" alt="">
+                        <img class="rounded-xl" src="http://placehold.it/95/95" alt="">
                     </div>
                 </div>
             </div>

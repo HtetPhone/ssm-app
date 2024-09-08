@@ -70,6 +70,9 @@ class DashboardController extends Controller
     public function destroy(Payment $payment)
     {
         $payment->delete();
+
+        //delete logo
+        Storage::disk('public')->delete($payment->logo);
         return redirect()->route('payment.method')->with(['delete' => 'Successfully Deleted!!']);
     }
 }
